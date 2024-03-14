@@ -1,0 +1,199 @@
+*{
+    font-family: montserrat;
+}
+body{
+    background: f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+    top: 40%;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    iframe{
+        bottom: 370px;
+        width: 100%;
+    }
+    img{
+        bottom: 370px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+}
+.dropdown-toggle{
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  #about-b .progress {
+    overflow: hidden;
+    height: 20px;
+    background: #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.6rem; }
+    #about-b .progress div {
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      background:  #ffc107;
+     }
+.about-txt{
+    font-size: larger;
+    padding-left: 23%;
+    position: relative;
+    top: -500px;
+}
+
+/* CONTACT */
+#contact-a .text-fields {
+    display: grid;
+    grid-template-areas: 'name email' 'subject phone' 'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+    #contact-a .text-fields .name-input {
+      grid-area: name; }
+    #contact-a .text-fields .subject-input {
+      grid-area: subject; }
+    #contact-a .text-fields .email-input {
+      grid-area: email; }
+    #contact-a .text-fields .phone-input {
+      grid-area: phone; }
+    #contact-a .text-fields .message-input {
+      grid-area: message;
+      height: 100px; }
+    #contact-a .text-fields .text-input {
+      padding: 0.5rem 1rem; }
+  
+  #contact-a button[type='submit'] {
+    width: 50%; }
+  
+  #contact-b .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center; }
+  
+  #contact-c h1 {
+    text-align: center;
+    font-size: 4rem; }
+
+    .py-3 {
+        padding: 3rem 0; }
+
+        .containercontact {
+            max-width: 1280px;
+            padding: 0 1.5rem;
+            margin: auto;
+            overflow: hidden; }
+          
+            @media (max-width: 500px) {
+                #contact-b .contact-info,
+                .items {
+                  grid-template-columns: 1fr; }
+                #contact-a .text-fields {
+                  grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+                #contact-b div {
+                  margin-bottom: 1rem;
+                  padding-bottom: 1rem;
+                  border-bottom: 1px #555 solid; }
+                  #contact-b div:last-child {
+                    border: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0; }
+                #contact-c h1 {
+                  font-size: 2rem; }
+                 }
